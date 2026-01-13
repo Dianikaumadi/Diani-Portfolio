@@ -73,19 +73,19 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Portrait / Avatar - Tall Rect */}
+          {/* Portrait / Avatar */}
           <motion.div 
             variants={itemVariants}
-            className="col-span-1 md:col-span-3 lg:col-span-4 row-span-2 relative rounded-[2.5rem] overflow-hidden border border-border group shadow-2xl"
+            className="col-span-1 md:col-span-3 lg:col-span-4 row-span-1 relative rounded-[2.5rem] overflow-hidden border border-border group shadow-2xl max-h-[400px]"
           >
             <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1288" 
+              src="/images/profile.png" 
               alt="Diani Wittahachchi" 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 text-white p-4">
-              <p className="font-display text-3xl font-bold">Diani W.</p>
+              <p className="font-display text-3xl font-bold">Diani Wittahachchi</p>
               <div className="flex items-center gap-2 mt-1">
                  <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
                  <p className="text-white/80 text-sm font-medium">Beliatta, Sri Lanka</p>
@@ -93,27 +93,27 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Tech Stack Ticker - Wide Rect */}
+          {/* Tech Stack Ticker */}
           <motion.div 
             variants={itemVariants}
-            className="col-span-1 md:col-span-3 lg:col-span-4 relative overflow-hidden rounded-[2.5rem] bg-surface/40 border border-border p-6 flex flex-col justify-center glass-panel bento-card"
+            className="col-span-1 md:col-span-3 lg:col-span-2 relative overflow-hidden rounded-[2.5rem] bg-surface/40 border border-border p-6 flex flex-col justify-center glass-panel bento-card"
           >
-            <div className="flex items-center gap-3 mb-6 text-secondary">
+            <div className="flex items-center gap-3 mb-4 text-secondary">
                <div className="p-2 bg-accent/10 rounded-lg text-accent">
                  <Code2 className="w-5 h-5" />
                </div>
-               <span className="text-sm font-bold uppercase tracking-wider">Tech Stack</span>
+               <span className="text-xs font-bold uppercase tracking-wider">Tech Stack</span>
             </div>
-            <div className="flex gap-8 overflow-hidden relative mask-linear py-2">
+            <div className="flex gap-6 overflow-hidden relative mask-linear py-2">
               <motion.div 
-                className="flex gap-8 whitespace-nowrap"
+                className="flex gap-6 whitespace-nowrap"
                 animate={{ x: ["0%", "-50%"] }}
                 transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
               >
                 {[...Array(2)].map((_, i) => (
                   <React.Fragment key={i}>
                     {['Java', 'Spring Boot', 'React', 'TypeScript', 'Kotlin', 'MySQL', 'Firebase', 'Tailwind'].map((tech) => (
-                      <span key={tech} className="text-2xl font-display font-bold text-primary/80 hover:text-accent transition-colors">
+                      <span key={tech} className="text-lg font-display font-bold text-primary/80 hover:text-accent transition-colors">
                         {tech}
                       </span>
                     ))}
@@ -123,14 +123,14 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Availability - Square */}
+          {/* Availability */}
           <motion.div 
             variants={itemVariants}
-            className="col-span-1 md:col-span-3 lg:col-span-4 relative rounded-[2.5rem] bg-gradient-to-br from-accent/5 to-teal-500/5 border border-border p-8 flex flex-col justify-between bento-card"
+            className="col-span-1 md:col-span-3 lg:col-span-2 relative rounded-[2.5rem] bg-gradient-to-br from-accent/5 to-teal-500/5 border border-border p-6 flex flex-col justify-between bento-card"
           >
              <div className="flex justify-between items-start">
-               <div className="p-3 bg-surface rounded-2xl shadow-sm text-accent">
-                 <Globe className="w-6 h-6" />
+               <div className="p-2 bg-surface rounded-xl shadow-sm text-accent">
+                 <Globe className="w-5 h-5" />
                </div>
                <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-500/10 border border-green-500/20">
                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_#22c55e]" />
@@ -138,20 +138,9 @@ const Hero: React.FC = () => {
                </div>
              </div>
              <div>
-               <p className="text-secondary text-sm font-bold uppercase tracking-wider mb-2">Status</p>
-               <p className="text-2xl font-display font-bold text-primary">Open to Work</p>
+               <p className="text-secondary text-xs font-bold uppercase tracking-wider mb-1">Status</p>
+               <p className="text-xl font-display font-bold text-primary">Open to Work</p>
              </div>
-          </motion.div>
-
-           {/* Stats / Highlight - Square */}
-           <motion.div 
-            variants={itemVariants}
-            className="col-span-1 md:col-span-3 lg:col-span-4 relative rounded-[2.5rem] bg-surface border border-border p-8 flex flex-col justify-center items-center text-center bento-card"
-          >
-             <p className="text-7xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-b from-primary to-primary/20">
-                10<span className="text-accent text-5xl align-top">+</span>
-             </p>
-             <p className="text-secondary font-bold uppercase tracking-wider mt-2">Projects Shipped</p>
           </motion.div>
 
         </motion.div>

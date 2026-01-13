@@ -11,8 +11,8 @@ export interface Project {
   image: string;
   problem: string;
   outcome: string;
-  features: string[];
-  role: string;
+  features?: string[];
+  role?: string;
 }
 
 export interface SkillCategory {

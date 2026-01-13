@@ -87,59 +87,114 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: "p1",
-    title: "Golden Grain Mill System",
-    category: "Enterprise Full-Stack",
-    role: "Lead Full-Stack Engineer",
-    description: "A comprehensive enterprise resource planning (ERP) system customized for large-scale paddy mill operations.",
-    problem: "Manual tracking of paddy stocks and payments led to significant inefficiencies and data errors in the supply chain.",
-    outcome: "Digitized 100% of mill operations, reduced processing time by 40%, and provided real-time financial analytics.",
-    tech: ["React", "Spring Boot", "MySQL", "Tailwind", "Axios"],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2670",
-    features: [
-      "Role-Based Access Control (RBAC)",
-      "Automated Invoice Generation",
-      "Real-time Inventory Visualization"
+    id: "golden-grain-mill",
+    title: "Golden Grain Mill Management System",
+    category: "Full-Stack Web Platform",
+    description:
+      "A role-based platform that digitizes Sri Lanka's rice & paddy ecosystem with dashboards for Admin, Supplier, and Buyer—covering catalog, inventory, paddy requests, orders, payments, invoices, and reporting.",
+    problem:
+      "Manual coordination across buyers/suppliers/admins made inventory tracking, order handling, and invoicing slow and error-prone.",
+    outcome:
+      "Delivered an end-to-end web system with secure APIs, responsive UI, and structured modules for smoother operations and clearer reporting.",
+    tech: [
+      "Java",
+      "Spring Boot",
+      "React",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "MySQL",
+      "REST APIs",
     ],
-    github: "https://github.com",
-    link: "https://github.com"
+    image: "/projects/golden-grain.jpg",
+    link: "#",
+    github: "https://github.com/kiruluchamika/Golden-Grain-Mill-ITP-Project.git",
   },
   {
-    id: "p2",
-    title: "Mind Bloom",
-    category: "Mobile Application",
-    role: "Android Developer",
-    description: "A scientifically-backed mindfulness application designed to reduce anxiety through guided journaling and mood tracking.",
-    problem: "Existing mental health apps were cluttered and complex. Users needed a calm, minimal interface for daily reflection.",
-    outcome: "Achieved a 4.8/5 usability score in beta testing. praised for its fluid animations and calming color theory.",
-    tech: ["Kotlin", "Android SDK", "Firebase Auth", "Room DB"],
-    image: "https://images.unsplash.com/photo-1512428559087-560fa5ce7d87?auto=format&fit=crop&q=80&w=2670",
-    features: [
-      "Mood trend analytics",
-      "Secure local journaling",
-      "Biometric authentication"
+    id: "thinkboard-mern",
+    title: "Thinkboard | MERN Notes Board",
+    category: "MERN Full-Stack App",
+    description:
+      "A full-stack notes board with clean CRUD flows (create/view/update/delete) powered by Express + MongoDB, with API protection using Upstash Redis-based rate limiting middleware.",
+    problem:
+      "Public CRUD APIs can be abused easily—needed a simple notes app with protection against spam/rapid requests.",
+    outcome:
+      "Built REST endpoints with persistent storage and added rate limiting to improve reliability and prevent abuse.",
+    tech: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Upstash Redis",
     ],
-    github: "https://github.com",
-    link: "https://github.com"
+    image: "/projects/thinkboard.jpg",
+    link: "#",
+    github: "https://github.com/Dianikaumadi/Thinkboard-MERN.git",
   },
   {
-    id: "p3",
-    title: "RideEase Transport",
-    category: "System Architecture",
-    role: "Backend Architect",
-    description: "A scalable ride-hailing backend system capable of handling complex driver-rider matching algorithms.",
-    problem: "Needed a high-concurrency system to match riders with drivers within seconds while managing location data.",
-    outcome: "Built a robust MVC architecture handling real-time requests with sub-second latency.",
-    tech: ["Java EE", "Servlets", "JSP", "MySQL", "Google Maps API"],
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=2670",
-    features: [
-      "Geospatial queries for driver matching",
-      "Fare estimation algorithm",
-      "Driver payout calculation module"
-    ],
-    github: "https://github.com",
-    link: "https://github.com"
-  }
+    id: "nivora-android",
+    title: "Nivora | Android Mobile Application",
+    category: "Android App",
+    description:
+      "An Android application with structured UI flows using Activities and Fragments, designed with practical screens and local persistence for managing app data offline.",
+    problem:
+      "Needed a smooth multi-screen Android flow with reliable offline storage to keep user data available without internet.",
+    outcome:
+      "Implemented Android navigation with local database persistence and clean UI structure for maintainability.",
+    tech: ["Kotlin", "Android Studio", "XML", "SQLite", "Local Database"],
+    image: "/projects/nivora.jpg",
+    link: "https://drive.google.com/file/d/1P5eBGuNB9lSNr1CiQxNXFi-_wW5Q_NM4/view?usp=sharing",
+    github: "https://github.com/Dianikaumadi/NivoraApp.git",
+  },
+  {
+    id: "mind-bloom",
+    title: "Mind Bloom | Android UI/UX (Figma to Android)",
+    category: "Mobile UI/UX + Firebase",
+    description:
+      "A Figma-to-Android implementation focusing on modern UI/UX screens and navigation, with Firebase Authentication integrated for sign-in and sign-up flows.",
+    problem:
+      "Needed to convert high-fidelity Figma designs into a functional Android UI with proper navigation and authentication.",
+    outcome:
+      "Delivered polished UI screens in Android Studio with integrated auth flow for a realistic app experience.",
+    tech: ["Figma", "Android Studio", "Kotlin", "XML", "Firebase Auth"],
+    image: "/projects/mind-bloom.jpg",
+    link: "https://drive.google.com/file/d/1OFYv2qlgT1XzFifyNdnSr7nJh-x19X4l/view?usp=sharing",
+    github: "https://github.com/Dianikaumadi/Mind_Bloom_MobileApp.git",
+  },
+  {
+    id: "rideease",
+    title: "RideEase Transport System",
+    category: "Web App (MVC)",
+    description:
+      "A ride-hailing web application with role-based dashboards for Passenger, Driver, and Admin—supporting ride booking flows, management features, and database-driven operations.",
+    problem:
+      "Required a structured transport/ride-hailing system with separate role workflows and maintainable architecture.",
+    outcome:
+      "Built an MVC-style web app with dynamic pages, server-side handling, and MySQL-backed workflows.",
+    tech: ["Java Servlets", "JSP", "MySQL", "MVC", "HTML", "CSS", "JavaScript"],
+    image: "/projects/rideease.jpg",
+    link: "#",
+    github: "https://github.com/kiruluchamika/RideEase-Transport-System-OOP-Project.git",
+  },
+  {
+    id: "carepro",
+    title: "CarePro Health Insurance Management System",
+    category: "Web App (IWT)",
+    description:
+      "A dynamic health insurance management web application built for IWT module, featuring CRUD operations, validation, and responsive UI pages for user/admin experiences.",
+    problem:
+      "Manual insurance handling and tracking needed a simple web system with organized data management and user flows.",
+    outcome:
+      "Created a functional PHP/MySQL web app with structured pages, validations, and core management features.",
+    tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    image: "/projects/carepro.jpg",
+    link: "#",
+    github: "https://github.com/kiruluchamika/SLIIT-IWT-Project-2024.git",
+  },
 ];
 
 export const TIMELINE: Experience[] = [

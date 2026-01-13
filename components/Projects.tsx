@@ -50,6 +50,20 @@ const Projects: React.FC = () => {
                         </span>
                       </div>
                    </div>
+
+                   {/* Action Buttons */}
+                   <div className="flex items-center gap-6 mt-8">
+                      {!['golden-grain-mill', 'rideease', 'carepro', 'thinkboard-mern'].includes(project.id) && (
+                        <a href={project.link || "#"} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-8 py-4 bg-primary text-background rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-accent/10">
+                           <span>Live Demo</span>
+                           <ExternalLink className="w-4 h-4" />
+                        </a>
+                      )}
+                      <a href={project.github || "#"} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors">
+                         <Github className="w-5 h-5" />
+                         <span>View Code</span>
+                      </a>
+                   </div>
                 </div>
 
                 {/* Content Side */}
@@ -87,17 +101,6 @@ const Projects: React.FC = () => {
                           {t}
                         </span>
                       ))}
-                   </div>
-
-                   <div className="flex items-center gap-6">
-                      <a href={project.link || "#"} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-8 py-4 bg-primary text-background rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-accent/10">
-                         <span>Live Demo</span>
-                         <ExternalLink className="w-4 h-4" />
-                      </a>
-                      <a href={project.github || "#"} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors">
-                         <Github className="w-5 h-5" />
-                         <span>View Code</span>
-                      </a>
                    </div>
                 </div>
 
