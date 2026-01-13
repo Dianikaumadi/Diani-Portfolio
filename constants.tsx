@@ -12,7 +12,7 @@ export const PERSONAL_DETAILS = {
     "Merging Logic with Luxury.",
     "Building Systems, Crafting Stories."
   ],
-  role: "Software Engineer",
+  role: "SOFTWARE ENGINEERING UNDERGRADUATE",
   subHeadline: "Specializing in High-Performance Web & Mobile Systems",
   bio: "I am a Software Engineering Undergraduate at SLIIT with a relentless focus on quality and user experience. My work bridges the gap between complex backend logic and elegant frontend interfaces. I don't just write code; I engineer solutions that feel intuitive, responsive, and robust.",
   location: "Sri Lanka",
@@ -32,8 +32,7 @@ export const CONTACT_INFO: ContactInfo = {
 
 export const STATS: Stat[] = [
   { label: "CGPA", value: "3.65", suffix: "/4.0" },
-  { label: "Experience", value: "4", suffix: "+ Years" },
-  { label: "Projects", value: "10", suffix: "+" },
+  { label: "ACADEMIC & PROJECT EXPERIENCE", value: "2", suffix: "+ Years" },
   { label: "OOP Grade", value: "A+", suffix: "" },
 ];
 
