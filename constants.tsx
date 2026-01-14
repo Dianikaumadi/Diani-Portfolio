@@ -17,7 +17,7 @@ export const PERSONAL_DETAILS = {
   bio: "I am a Software Engineering Undergraduate at SLIIT with a relentless focus on quality and user experience. My work bridges the gap between complex backend logic and elegant frontend interfaces. I don't just write code; I engineer solutions that feel intuitive, responsive, and robust.",
   location: "Sri Lanka",
   availability: "Available for Hire",
-  cvLink: "#" // Placeholder
+  cvLink: "/cv/diani-wittahachchi-cv.pdf" 
 };
 
 export const CONTACT_INFO: ContactInfo = {
