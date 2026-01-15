@@ -13,6 +13,7 @@ export interface Project {
   outcome: string;
   features?: string[];
   role?: string;
+  isGroupProject?: boolean;
 }
 
 export interface SkillCategory {

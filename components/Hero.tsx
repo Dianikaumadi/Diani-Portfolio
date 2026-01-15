@@ -66,6 +66,7 @@ const Hero: React.FC = () => {
               </button>
               <a 
                 href={PERSONAL_DETAILS.cvLink} 
+                download="Diani-Wittahachchi-CV"
                 className="px-8 py-4 bg-surface border border-border text-primary rounded-full font-bold flex items-center gap-2 hover:bg-surfaceHighlight transition-colors"
               >
                 Download CV <Download className="w-4 h-4" />

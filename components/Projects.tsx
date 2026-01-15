@@ -74,9 +74,16 @@ const Projects: React.FC = () => {
                         <div className="h-[2px] flex-1 bg-gradient-to-r from-accent/50 to-transparent" />
                       </div>
                       
-                      <h3 className="text-4xl md:text-5xl font-display font-bold text-primary mb-6 leading-tight group-hover:text-accent transition-colors duration-300">
-                        {project.title}
-                      </h3>
+                      <div className="flex items-center gap-3 mb-4 flex-wrap">
+                        <h3 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight group-hover:text-accent transition-colors duration-300">
+                          {project.title}
+                        </h3>
+                        {project.isGroupProject && (
+                          <span className="px-3 py-1 rounded-full bg-accent/10 border border-accent/30 text-accent text-xs font-bold uppercase tracking-wider">
+                            University Group Project
+                          </span>
+                        )}
+                      </div>
                       <p className="text-secondary text-lg leading-relaxed mb-8">
                         {project.description}
                       </p>

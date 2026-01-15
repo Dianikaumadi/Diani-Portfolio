@@ -48,7 +48,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     icon: <Terminal className="w-5 h-5" />,
     skills: [
       { name: "Java (Spring Boot)", level: 95 },
-      { name: "Microservices", level: 85 },
+      { name: "MERN Stack", level: 85 },
       { name: "RESTful APIs", level: 90 },
       { name: "Hibernate / JPA", level: 85 }
     ]
@@ -69,7 +69,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "Kotlin (Android)", level: 90 },
       { name: "Jetpack Compose", level: 75 },
-      { name: "Firebase", level: 85 }
+      { name: "Firebase (Basic)", level: 60 }
     ]
   },
   {
@@ -77,8 +77,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     icon: <Cpu className="w-5 h-5" />,
     skills: [
       { name: "Git / GitHub", level: 90 },
-      { name: "Docker", level: 70 },
-      { name: "CI/CD (Basic)", level: 75 },
+      { name: "Docker (Basic)", level: 60 },
+      { name: "CI/CD (Basic)", level: 60 },
       { name: "Linux CLI", level: 80 }
     ]
   }
@@ -108,6 +108,7 @@ export const PROJECTS: Project[] = [
     image: "/projects/golden-grain.jpg",
     link: "#",
     github: "https://github.com/kiruluchamika/Golden-Grain-Mill-ITP-Project.git",
+    isGroupProject: true,
   },
   {
     id: "thinkboard-mern",
@@ -178,6 +179,7 @@ export const PROJECTS: Project[] = [
     image: "/projects/rideease.jpg",
     link: "#",
     github: "https://github.com/kiruluchamika/RideEase-Transport-System-OOP-Project.git",
+    isGroupProject: true,
   },
   {
     id: "carepro",
@@ -193,6 +195,7 @@ export const PROJECTS: Project[] = [
     image: "/projects/carepro.jpg",
     link: "#",
     github: "https://github.com/kiruluchamika/SLIIT-IWT-Project-2024.git",
+    isGroupProject: true,
   },
 ];
 
