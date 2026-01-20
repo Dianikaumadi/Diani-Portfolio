@@ -25,8 +25,8 @@ export const CONTACT_INFO: ContactInfo = {
   phone: "+94 71 192 8893",
   location: "Beliatta, Sri Lanka",
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com"
+    github: "https://github.com/Dianikaumadi/",
+    linkedin: "https://www.linkedin.com/in/diani-kaumadi/"
   }
 };
 
