@@ -17,13 +17,13 @@ export const PERSONAL_DETAILS = {
   bio: "I am a Software Engineering Undergraduate at SLIIT with a relentless focus on quality and user experience. My work bridges the gap between complex backend logic and elegant frontend interfaces. I don't just write code; I engineer solutions that feel intuitive, responsive, and robust.",
   location: "Sri Lanka",
   availability: "Available for Hire",
-  cvLink: "/cv/diani-wittahachchi-cv.pdf" 
+  cvLink: "/cv/Diani_CV_Intern.pdf" 
 };
 
 export const CONTACT_INFO: ContactInfo = {
   email: "dkgwwittahachchi@gmail.com",
   phone: "+94 71 192 8893",
-  location: "Beliatta, Sri Lanka",
+  location: "Colombo, Sri Lanka",
   socials: {
     github: "https://github.com/Dianikaumadi/",
     linkedin: "https://www.linkedin.com/in/diani-kaumadi/"
@@ -31,7 +31,7 @@ export const CONTACT_INFO: ContactInfo = {
 };
 
 export const STATS: Stat[] = [
-  { label: "CGPA", value: "3.65", suffix: "/4.0" },
+  { label: "CGPA", value: "3.67", suffix: "/4.0" },
   { label: "ACADEMIC & PROJECT EXPERIENCE", value: "2", suffix: "+ Years" },
   { label: "OOP Grade", value: "A+", suffix: "" },
 ];
