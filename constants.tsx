@@ -34,6 +34,7 @@ export const STATS: Stat[] = [
   { label: "CGPA", value: "3.67", suffix: "/4.0" },
   { label: "ACADEMIC & PROJECT EXPERIENCE", value: "2", suffix: "+ Years" },
   { label: "OOP Grade", value: "A+", suffix: "" },
+  { label: "Semester 1 2024, Semester 2 2025", value: "Dean's List", suffix: "" },
 ];
 
 export const VALUES = [

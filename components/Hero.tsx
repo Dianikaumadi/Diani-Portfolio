@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
               <p className="font-display text-3xl font-bold">Diani Wittahachchi</p>
               <div className="flex items-center gap-2 mt-1">
                  <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                 <p className="text-white/80 text-sm font-medium">Beliatta, Sri Lanka</p>
+                <p className="text-white/80 text-sm font-medium">Colombo, Sri Lanka</p>
               </div>
             </div>
           </motion.div>

@@ -16,10 +16,10 @@ const Stats: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className="text-center group"
             >
-              <div className="font-display text-4xl md:text-5xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
-                {stat.value}<span className="text-accent text-2xl md:text-3xl">{stat.suffix}</span>
+              <div className="font-display text-3xl md:text-4xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
+                {stat.value}<span className="text-accent text-xl md:text-2xl">{stat.suffix}</span>
               </div>
-              <p className="text-secondary text-sm md:text-base font-medium uppercase tracking-wider">
+              <p className="text-secondary text-xs md:text-sm font-medium uppercase tracking-wide">
                 {stat.label}
               </p>
             </motion.div>
